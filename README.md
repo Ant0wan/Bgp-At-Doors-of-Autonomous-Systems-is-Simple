@@ -39,3 +39,25 @@ This project is also a dependeny of Inception Of Things - part3. V1 and V2 are s
 
 ### Resources
 ![gns3](https://www.gns3.com/software)
+
+### Getting Started
+
+#### Installation
+
+```=shell
+sudo add-apt-repository ppa:gns3/ppa
+sudo apt update
+sudo apt install gns3-gui gns3-server
+```
+
+```=shell
+sudo apt remove docker docker-engine docker.io
+sudo apt-get install apt-transport-https ca-certificates curl \ software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository \
+"deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) stable"
+sudo apt update
+sudo apt install docker-ce
+ubridge libvirt kvm wireshark docker
+```
