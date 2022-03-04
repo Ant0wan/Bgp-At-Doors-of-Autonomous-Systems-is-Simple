@@ -28,7 +28,7 @@
 
 ### About The Project
 
-This project is also a dependeny of Inception Of Things - part3. V1 and V2 are specials used by Inception-Of-Things. They aimed at being deployed by ArgoCD.
+This project aims at [...]
 
 
 ### Getting Started
