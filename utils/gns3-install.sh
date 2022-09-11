@@ -22,3 +22,12 @@ vpcs -v
 
 . kvm.sh
 #https://computingforgeeks.com/how-to-install-gns3-on-fedora-linux/
+
+git clone http://github.com/ndevilla/iniparser.git
+cd iniparser
+make
+sudo cp libiniparser.* /usr/lib/
+sudo cp src/iniparser.h /usr/local/include
+sudo cp src/dictionary.h /usr/local/include
+cd ..
+

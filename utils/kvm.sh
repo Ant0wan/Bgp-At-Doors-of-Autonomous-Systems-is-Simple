@@ -19,3 +19,7 @@ sudo dnf -y install virt-manager
 sudo virsh net-define br10.xml
 sudo virsh net-start br10
 sudo virsh net-autostart br10
+
+#. test-instance.sh
+## Login to instance
+#sudo virsh console fed35
