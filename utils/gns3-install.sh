@@ -20,3 +20,4 @@ mv vpcs_0.8b_Linux64 vpcs
 chmod +x vpcs
 sudo cp vpcs /usr/local/bin/
 vpcs -v
+
