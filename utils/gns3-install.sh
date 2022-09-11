@@ -31,3 +31,4 @@ sudo cp src/iniparser.h /usr/local/include
 sudo cp src/dictionary.h /usr/local/include
 cd ..
 
+. docker.sh
