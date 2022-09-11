@@ -40,20 +40,6 @@ This project aims at [...]
 
 #### Installation
 
-```=shell
-sudo add-apt-repository ppa:gns3/ppa
-sudo apt update
-sudo apt install gns3-gui gns3-server
-```
+Setup scripts in `utils/`
 
-```=shell
-sudo apt remove docker docker-engine docker.io
-sudo apt-get install apt-transport-https ca-certificates curl \ software-properties-common
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository \
-"deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) stable"
-sudo apt update
-sudo apt install docker-ce
-ubridge libvirt kvm wireshark docker
-```
+Steps to deploy GNS3
