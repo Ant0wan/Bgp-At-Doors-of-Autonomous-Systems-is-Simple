@@ -21,3 +21,5 @@ chmod +x vpcs
 sudo cp vpcs /usr/local/bin/
 vpcs -v
 
+
+https://computingforgeeks.com/how-to-install-gns3-on-fedora-linux/
