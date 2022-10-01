@@ -43,3 +43,11 @@ This project aims at [...]
 Setup scripts in `utils/`
 
 Steps to deploy GNS3
+
+### P1
+
+Incide the P1 directory, run:
+
+```shell
+docker-compose run -d
+```

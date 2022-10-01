@@ -3,8 +3,6 @@ services:
   busybox:
     container_name: busybox
     hostname: mybusybox
-    image: busybox:42
-    build:
-      context: .
-      dockerfile: busybox.dockerfile
+    image: busybox:stable-glibc
+    command: sleep 3600
 
