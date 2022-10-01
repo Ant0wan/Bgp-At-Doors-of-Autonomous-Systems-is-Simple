@@ -1,0 +1,10 @@
+version: '3'
+services:
+  busybox:
+    container_name: busybox
+    hostname: mybusybox
+    image: busybox:42
+    build:
+      context: .
+      dockerfile: busybox.dockerfile
+
