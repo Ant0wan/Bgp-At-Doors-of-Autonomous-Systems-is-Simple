@@ -5,4 +5,8 @@ services:
     hostname: mybusybox
     image: busybox:stable-glibc
     command: sleep 3600
-
+  rooter:
+    container_name: rooter
+    hostname: myrooter
+    image: debian:11-slim
+    command: sleep 3600 # Install things like frrouting/frr
