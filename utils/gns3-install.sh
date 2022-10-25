@@ -7,7 +7,7 @@ sudo dnf -y install wireshark
 sudo dnf -y install gns3-server gns3-gui
 
 git clone https://github.com/GNS3/dynamips
-cd dynamips
+cd dynamips ## should change CDs
 mkdir build
 cd build
 cmake ..
