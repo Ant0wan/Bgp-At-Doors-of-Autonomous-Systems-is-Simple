@@ -1,5 +1,5 @@
-ARG packages
 FROM debian:11-slim
 MAINTAINER Antoine Barthelemy <antoine@linux.com>
+ARG packages
 RUN apt update
 RUN apt install -y $packages
