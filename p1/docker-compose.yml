@@ -13,7 +13,7 @@ services:
       context: .
       dockerfile: Dockerfile.rooter
       args:
-        packages: iputils-ping
+        packages: 'iputils-ping iproute2'
       labels:
         com.example.description: "Rooter container"
         com.example.department: "IT"
