@@ -8,5 +8,13 @@ services:
   rooter:
     container_name: rooter
     hostname: myrooter
-    image: debian:11-slim
     command: sleep 3600 # Install things like frrouting/frr
+    build:
+      context: .
+      dockerfile: Dockerfile.rooter
+      args:
+        name: rooter
+      labels:
+        com.example.description: "Rooter container"
+        com.example.department: "IT"
+        com.example.label-with-empty-value: ""

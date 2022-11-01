@@ -1,0 +1,4 @@
+ARG name
+FROM debian:11-slim
+MAINTAINER Antoine Barthelemy <antoine@linux.com>
+
