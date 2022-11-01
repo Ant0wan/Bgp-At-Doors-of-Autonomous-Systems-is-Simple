@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e +h
 ## KVM: Install
-cat /proc/cpuinfo | egrep "vmx|svm"
+grep -E "vmx|svm" < /proc/cpuinfo
 # KVM Core
 sudo dnf -y install bridge-utils libvirt virt-install qemu-kvm
 lsmod | grep kvm

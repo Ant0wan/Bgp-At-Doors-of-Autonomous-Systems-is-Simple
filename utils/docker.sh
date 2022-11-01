@@ -14,5 +14,5 @@ EOF
 sudo dnf makecache
 sudo dnf install docker-ce docker-ce-cli containerd.io -y
 sudo systemctl enable --now docker
-sudo usermod -aG docker $(whoami)
+sudo usermod -aG docker "$(whoami)"
 newgrp docker
