@@ -4,8 +4,8 @@ jobs:
   format:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Check compose file syntax
-        uses: isbang/compose-action@v1.4.0
         run: docker-compose -f ./p1/docker-compose.yml config
   build:
     runs-on: ubuntu-latest
