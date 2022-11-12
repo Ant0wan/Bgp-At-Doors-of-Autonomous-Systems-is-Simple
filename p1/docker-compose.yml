@@ -15,6 +15,6 @@ services:
       args:
         packages: 'iputils-ping iproute2'
       labels:
-        com.example.description: "Rooter container"
-        com.example.department: "IT"
-        com.example.label-with-empty-value: ""
+        com.example.name: "Rooter"
+        com.example.description: "The rooter container image based on debian-11-slim."
+        com.example.image: "Debian-11-slim"
