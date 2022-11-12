@@ -1,0 +1,11 @@
+name: Dockefile check
+on: push
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: hadolint/hadolint-action@v2.1.0
+        with:
+          dockerfile: ./p1/Dockerfile.rooter
+
