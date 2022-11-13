@@ -20,6 +20,7 @@ jobs:
           docker run $image_tag:latest
           docker push $image_tag:latest
         env:
-          image_tag: ghcr.io/ant0wan/bgp-at-doors-of-autonomous-systems-is-simple/rooter
+          image_tag: ghcr.io/ant0wan/rooter
+            #image_tag: ghcr.io/ant0wan/bgp-at-doors-of-autonomous-systems-is-simple/rooter
 
 
