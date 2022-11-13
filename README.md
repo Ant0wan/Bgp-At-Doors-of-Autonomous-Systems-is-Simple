@@ -5,7 +5,7 @@
   <h1 align="center">Bgp At Doors of Autonomous Systems is Simple</h3>
   <p align="center">
     Basics of network administration.
-    <br><img src="https://github.com/Ant0wan/Bgp-At-Doors-of-Autonomous-Systems-is-Simple/actions/workflows/docker-compose-check.yaml/badge.svg">  <img src="https://github.com/Ant0wan/Bgp-At-Doors-of-Autonomous-Systems-is-Simple/actions/workflows/shellcheck.yaml/badge.svg">  <img src="https://github.com/Ant0wan/Bgp-At-Doors-of-Autonomous-Systems-is-Simple/actions/workflows/dockerfile-check.yaml/badge.svg">
+<br><br><img src="https://github.com/Ant0wan/Bgp-At-Doors-of-Autonomous-Systems-is-Simple/actions/workflows/dockerfile.yaml/badge.svg"> <img src="https://github.com/Ant0wan/Bgp-At-Doors-of-Autonomous-Systems-is-Simple/actions/workflows/docker-compose.yaml/badge.svg"> <img src="https://github.com/Ant0wan/Bgp-At-Doors-of-Autonomous-Systems-is-Simple/actions/workflows/publish.yaml/badge.svg"> <img src="https://github.com/Ant0wan/Bgp-At-Doors-of-Autonomous-Systems-is-Simple/actions/workflows/shell.yaml/badge.svg">
   </p>
 </div>
 
