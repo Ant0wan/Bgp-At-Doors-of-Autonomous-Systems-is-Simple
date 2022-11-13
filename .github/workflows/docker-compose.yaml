@@ -1,19 +1,18 @@
-name: Docker compose check
+name: Docker-compose
 on: push
 jobs:
-  format:
+  syntax:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Check compose file syntax
+      - name: Syntax
         run: docker-compose -f ./p1/docker-compose.yml config
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Docker compose build
+      - name: Test
         uses: isbang/compose-action@v1.4.0
         with:
           compose-file: "./p1/docker-compose.yml"
-            #run: docker-compose build
 

@@ -1,11 +1,12 @@
-name: Dockefile check
+name: Dockefile
 on: push
 jobs:
-  lint:
+  hadolint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: hadolint/hadolint-action@v2.1.0
+      - name: Hadolint
+        uses: hadolint/hadolint-action@v2.1.0
         with:
           dockerfile: ./p1/Dockerfile.rooter
           ignore: 'DL3008'

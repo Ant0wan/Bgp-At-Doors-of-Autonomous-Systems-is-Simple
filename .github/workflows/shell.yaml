@@ -1,11 +1,13 @@
-name: "Shellcheck"
+name: Shell
+
 on:
   push:
     branches:
       - master
+
 jobs:
-  shellcheck:
-    name: Shellcheck
+  lint:
+    name: Lint shell scripts
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
