@@ -1,0 +1,19 @@
+name: publish
+on: [push]
+jobs:
+  publish-rooter-docker-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+         registry: ghcr.io
+         username: ${{ github.actor }}
+         password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build the Badass Rooter Docker image
+        run: |
+          docker build -f ./p1/Dockerfile.rooter . --tag ghcr.io/Ant0wan/Bgp-At-Doors-of-Autonomous-Systems-is-Simple/rooter:latest
+          docker run ghcr.io/Ant0wan/Bgp-At-Doors-of-Autonomous-Systems-is-Simple/rooter:latest
+          docker push ghcr.io/Ant0wan/Bgp-At-Doors-of-Autonomous-Systems-is-Simple/rooter:latest
+
