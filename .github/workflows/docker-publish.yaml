@@ -1,5 +1,8 @@
 name: publish
-on: [push]
+
+on:
+  push
+
 jobs:
   publish-rooter-docker-image:
     runs-on: ubuntu-latest
@@ -13,7 +16,10 @@ jobs:
          password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build the Badass Rooter Docker image
         run: |
-          docker build -f ./p1/Dockerfile.rooter . --tag ghcr.io/Ant0wan/Bgp-At-Doors-of-Autonomous-Systems-is-Simple/rooter:latest
-          docker run ghcr.io/Ant0wan/Bgp-At-Doors-of-Autonomous-Systems-is-Simple/rooter:latest
-          docker push ghcr.io/Ant0wan/Bgp-At-Doors-of-Autonomous-Systems-is-Simple/rooter:latest
+          docker build -f ./p1/Dockerfile.rooter . --tag $image_tag:latest
+          docker run $image_tag:latest
+          docker push $image_tag:latest
+        env:
+          image_tag: ghcr.io/ant0wan/bgp-at-doors-of-autonomous-systems-is-simple/rooter
+
 
