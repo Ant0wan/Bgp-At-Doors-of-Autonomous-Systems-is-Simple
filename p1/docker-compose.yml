@@ -13,7 +13,7 @@ services:
       context: .
       dockerfile: Dockerfile.rooter
       args:
-        packages: 'iputils-ping iproute2'
+        version: 'v8.4.0'
       labels:
         com.example.name: "Rooter"
         com.example.description: "The rooter container image based on debian-11-slim."

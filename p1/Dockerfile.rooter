@@ -1,6 +1,8 @@
-FROM debian:11-slim
-ARG packages
-RUN apt-get update \
-	&& apt-get install -y --no-install-recommends $packages \
-	&& apt-get clean \
-	&& rm -rf /var/lib/apt/lists/*
+ARG version
+FROM frrouting/frr:$version
+RUN echo 'service integrated-vtysh-config' > /etc/frr/vtysh.conf && \
+  sed -i \
+    -e 's/bgpd=no/bgpd=yes/g' \
+    -e 's/ospfd=no/ospfd=yes/g' \
+    -e 's/isisd=no/isisd=yes/g' \
+  /etc/frr/daemons
