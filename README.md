@@ -54,3 +54,5 @@ docker-compose run -d
 ```
 
 doc : https://frrouting.org/
+frr use doc: https://buildmedia.readthedocs.org/media/pdf/frrouting/latest/frrouting.pdf
+docker frr with GNS3: https://www.n-study.com/en/how-to-use-gns3/how-to-use-frr-free-range-routing-container-on-gns3/
