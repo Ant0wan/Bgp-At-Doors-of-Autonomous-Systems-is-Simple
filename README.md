@@ -56,3 +56,14 @@ docker-compose run -d
 doc : https://frrouting.org/
 frr use doc: https://buildmedia.readthedocs.org/media/pdf/frrouting/latest/frrouting.pdf
 docker frr with GNS3: https://www.n-study.com/en/how-to-use-gns3/how-to-use-frr-free-range-routing-container-on-gns3/
+
+
+#### Sources
+https://www.youtube.com/watch?v=NxP9lBvoawE
+
+https://sites.google.com/site/expccna/home
+
+https://www.subnet-calculator.com/
+
+http://www.tcpipguide.com/free/t_DataEncapsulationProtocolDataUnitsPDUsandServiceDa.htm
+
